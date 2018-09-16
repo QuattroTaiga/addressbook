@@ -8,6 +8,7 @@
   include '/includes/nav.php';
   include '/includes/footer.php';
   include '/functions/table.php';
+  include '/functions/addCon.php';
 ?>
 
   <table>
