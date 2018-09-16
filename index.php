@@ -1,3 +1,6 @@
+
+
+<link rel="stylesheet" href="css/css.css">
 <?php
   include '/includes/header.php';
   include '/includes/nav.php';
@@ -5,7 +8,7 @@
   include '/functions/table.php';
 ?>
 
-  <table class="mt-5 table table-striped table-bordered">
+  <table>
     <thead>
       <tr>
         <th scope="col">ID</th>
