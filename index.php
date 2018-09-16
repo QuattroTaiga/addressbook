@@ -32,7 +32,7 @@
         <td><?php echo $row[3];?></td>
         <td><?php echo $row[4];?></td>
         <td><?php echo $row[5];?></td>
-        <td><button><a name="edit_btn" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';documnet.getElementById('fade').style.display='block'">Edit</a></button>|<button type="submit" name="delete-btn">Delete</button></td> 
+        <td><button type="submit" name="btn-edit" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';documnet.getElementById('fade').style.display='block'">Edit</a></button>|<button type="submit" name="delete-btn">Delete</button></td> 
       </tr>
   <?php } ?>
     </tbody>

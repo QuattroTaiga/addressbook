@@ -1,11 +1,11 @@
 <?php
 include ("../config/db.php");
-?>
+
 
 
 <?php
-
-if(isset($_POST[addsave-btn]))
+/*
+if(isset($_POST[btn-addsave]))
 {
 $firstname = $_POST['FirstName'];
 $lastname = $_POST['LastName'];
@@ -15,15 +15,17 @@ $email = $_POST['Email'];
 $sql_query = "INSERT INTO entries (FirstName,LastName,Telephone,Address,Email) VALUES ('$firstname','$lastname','$telephone','$address','$email')";
 }
 
+*/
+
 ?>
 
 
 <?php
-if(isset($_GET['edit-btn']))
+if(isset($_GET['btn-edit']))
 {
 $sql_query="SELECT * FROM entries WHERE ID=".$_GET['edit-btn'];
 $result_set=mysqli_query($connect,$sql_query);
- $fetched_row=mysqli_fetch_array($result_set);
+$fetched_row=mysqli_fetch_array($result_set);
     
 }
 
@@ -36,7 +38,7 @@ $result_set=mysqli_query($connect,$sql_query);
 
 <?php
 
-if(isset($POST[update-btn]))
+if(isset($_POST[btn-update]))
 {
 $firstname = $_POST['FirstName'];
 $lastname = $_POST['LastName'];
@@ -52,9 +54,12 @@ $sql_query = "UPDATE entries SET FirstName='$firstname',LastName='$lastname',Tel
 
 <?php
 /* needs to be changed*/
-if(isset($POST[delete-btn]))
+if(isset($_POST[btn-delete]))
 {
  $sql_query = "UPDATE entries SET Status= 'Disabled' WHERE ID='someid'";/* needs to be changed*/
 }
+
+?>
+
 
 ?>
