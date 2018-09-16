@@ -29,8 +29,8 @@
         <td><?php echo $row[3];?></td>
         <td><?php echo $row[4];?></td>
         <td><?php echo $row[5];?></td>
-        <td>Edit|Delete</td>
+        <td><button type="submit" name="update-btn">Edit</button>|<button type="submit" name="delete-btn">Delete</button></td> 
       </tr>
-      <?php } ?>
+  <?php } ?>
     </tbody>
   </table>

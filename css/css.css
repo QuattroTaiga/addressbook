@@ -1,3 +1,26 @@
+button /* needs to change */
+{
+border-radius: 1em;
+border-color: black;
+border-style: hidden;
+background-color:gray;    
+}
+
+
+button:hover  /* needs to change */
+{
+border-style:groove;
+border-color:deepskyblue;
+background-color: skyblue;
+}
+
+button:active   /* needs to change */
+{
+background-color: red;
+}
+
+
+
 table {
     border-collapse: collapse;
     border:2px solid rgb(200,200,200);
