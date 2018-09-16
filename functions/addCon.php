@@ -19,6 +19,22 @@ $sql_query = "INSERT INTO entries (FirstName,LastName,Telephone,Address,Email) V
 
 
 <?php
+if(isset($_GET['edit-btn']))
+{
+$sql_query="SELECT * FROM entries WHERE ID=".$_GET['edit-btn'];
+$result_set=mysqli_query($connect,$sql_query);
+ $fetched_row=mysqli_fetch_array($result_set);
+    
+}
+
+?>
+
+
+
+
+
+
+<?php
 
 if(isset($POST[update-btn]))
 {
