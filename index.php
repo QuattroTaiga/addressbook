@@ -1,12 +1,7 @@
-<!--Because server not always up <html>
-<body> -->
-
-
-<link rel="stylesheet" href="css/css.css">
 <?php
   include '/includes/header.php';
-  include '/includes/nav.php';
   include '/includes/footer.php';
+  include '/includes/nav.php';
   include '/functions/table.php';
   include '/functions/addCon.php';
 ?>
@@ -70,9 +65,3 @@
 </div>
 
 <div id="fade" class="dark_overlay"></div>
-
-<!--Because server not always up
-</body>
-</html>
-
--->
