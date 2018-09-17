@@ -1,6 +1,6 @@
-<!--Because server not always up <html>  
+<!--Because server not always up <html>
 <body> -->
-     
+
 
 <link rel="stylesheet" href="css/css.css">
 <?php
@@ -32,47 +32,44 @@
         <td><?php echo $row[3];?></td>
         <td><?php echo $row[4];?></td>
         <td><?php echo $row[5];?></td>
-        <td><button type="submit" name="btn-edit" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';documnet.getElementById('fade').style.display='block'">Edit</a></button>|<button type="submit" name="delete-btn">Delete</button></td> 
+        <td><button type="submit" name="btn-edit" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';documnet.getElementById('fade').style.display='block'">Edit</a></button>|<button type="submit" name="delete-btn">Delete</button></td>
       </tr>
-  <?php } ?>
+      <?php } ?>
     </tbody>
   </table>
 
-
-    
 <div id="light" class="light_content">
-  <h1>Edit Contact</h1>  
-<div style="text-align: center">
-<div>
-<label for="FirstName">First Name:</label>
-<input type="text" name="FirstName" placeholder="First Name" value="<?php echo $fetched_row['FirstName']; ?>" required>   </div>
-    
-<div>
-<label for="LastName">Last Name:</label>
-<input type="text" name="LastName" placeholder="Last Name" value="<?php echo $fetched_row['lastName']; ?>" required>   </div>
-    
+  <h1>Edit Contact</h1>
+  <div style="text-align: center">
     <div>
-<label for="Email">Email:</label>
-<input type="text" name="Email" placeholder="Email" value="<?php echo $fetched_row['Email']; ?>" required>   </div>
-  
-       <div>
-<label for="Address">Address:</label>
-<input type="text" name="Address" placeholder="Address" value="<?php echo $fetched_row['Address']; ?>" required>   </div>
-    
+      <label for="FirstName">First Name:</label>
+      <input type="text" name="FirstName" placeholder="First Name" value="<?php echo $fetched_row['FirstName']; ?>" required>
+    </div>
     <div>
-<label for="Telephone">Telephone:</label>
-<input type="text" name="Telephone" placeholder="Telephone" value="<?php echo $fetched_row['Telephone']; ?>" required>   </div>
-</div>
-   
-    
-<div style="text-align: center;"> 
-  <button type="submit" name="update-btn" align="center">Update</button> 
-    
-   <button><a  align="center"  href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';documnet.getElementById('fade').style.display='none'">Close</a></button> </div>
+      <label for="LastName">Last Name:</label>
+      <input type="text" name="LastName" placeholder="Last Name" value="<?php echo $fetched_row['lastName']; ?>" required>
+    </div>
+    <div>
+      <label for="Email">Email:</label>
+      <input type="text" name="Email" placeholder="Email" value="<?php echo $fetched_row['Email']; ?>" required>
+    </div>
+    <div>
+      <label for="Address">Address:</label>
+      <input type="text" name="Address" placeholder="Address" value="<?php echo $fetched_row['Address']; ?>" required>
+    </div>
+    <div>
+      <label for="Telephone">Telephone:</label>
+      <input type="text" name="Telephone" placeholder="Telephone" value="<?php echo $fetched_row['Telephone']; ?>" required>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <button type="submit" name="update-btn" align="center">Update</button>
+    <button><a  align="center"  href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';documnet.getElementById('fade').style.display='none'">Close</a></button>
+  </div>
 </div>
 
 <div id="fade" class="dark_overlay"></div>
-
 
 <!--Because server not always up
 </body>
