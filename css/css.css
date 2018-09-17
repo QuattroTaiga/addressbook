@@ -1,22 +1,28 @@
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
-
 @font-face {
   font-family: 'Montserrat';
-  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 html {
-  font-size: 62.5%
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
 }
 
 h1 {
   text-align: center;
+  font-size: 3rem;
 }
 
 button {/* needs to change */
@@ -94,4 +100,42 @@ tr:nth-child(even) td {
   background-color: white;
   z-index: 1002;
   overflow: auto
+}
+
+nav {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+li a:hover {
+  filter: saturate(2);
+}
+
+.active {
+  background-color: #1976D2;
+}
+
+.logout {
+  background-color: #FF5252;
 }
