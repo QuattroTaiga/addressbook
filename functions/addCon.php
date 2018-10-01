@@ -11,9 +11,9 @@
     $sql_query = "INSERT INTO entries (FirstName,LastName,Telephone,Address,Email) VALUES ('$firstname','$lastname','$telephone','$address','$email')";
   }
 
-  if(isset($_GET['btn-edit']))
+  if(isset($_POST['btn-edit']))
   {
-    $sql_query="SELECT * FROM entries WHERE ID=".$_GET['edit-btn'];
+    $sql_query="SELECT * FROM entries WHERE ID=".$_POST['edit-btn'];
     $result_set=mysqli_query($connect,$sql_query);
     $fetched_row=mysqli_fetch_array($result_set);
   }
