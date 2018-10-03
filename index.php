@@ -1,9 +1,9 @@
 <?php
-  include '/includes/header.php';
-  include '/includes/footer.php';
-  include '/includes/nav.php';
-  include '/functions/table.php';
-  include '/functions/addCon.php';
+  include 'includes/header.php';
+  include 'includes/footer.php';
+  include 'includes/nav.php';
+  include 'functions/table.php';
+  include 'functions/addCon.php';
 ?>
 
   <table>
